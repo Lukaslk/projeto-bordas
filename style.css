@@ -1,0 +1,56 @@
+body {
+    background-color: rgba(0, 0, 0, 0.849);
+    font-family: Courier New;
+    color:blanchedalmond;
+}
+
+#titulo {
+    font-family: Calibri light, sans-serif;
+    font-size: 3em;
+    color:rgba(255, 255, 255, 0.801);
+    margin-bottom: 0;
+}
+
+#sub_titulo {
+    font-family: Calibri light, sans-serif;
+    font-size: 0.7em;
+    color:rgba(255, 255, 255, 0.801);
+    margin-bottom: 10px;
+}
+
+/*Container principal*/
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 6px;
+    
+}
+
+/*Container para o quadrado e os range*/
+#container_horizontal {
+    display:flex;
+    flex-direction: row;
+}
+
+/*Box responsável por receber o border style dos range*/
+#boxCopiar {
+    height: 150px;
+    width: 240px;
+    margin: 15px;
+}
+
+/*Responsável por ordenar um das div*/
+#id_de_ordenacao {
+    order: -2;
+}
+
+/*Estilo do quadrado*/
+#squad {
+    background-color: white;
+    border: solid 1px;
+    width: 100px; 
+    height: 100px;
+    order: -1;
+}
+

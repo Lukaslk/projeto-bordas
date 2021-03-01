@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Border Radius Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <p id="titulo">Manipulando Bordas</p>
+        <a id="sub_titulo" href="https://www.linkedin.com/in/lucas-rodrigues-o/">A service by Lucas R.</a>
+
+        <div id="container_horizontal">
+
+            <!--div que conter os manipuladores esquerdo-->
+            <div id="id_de_ordenacao" class='container'>
+                Esquerdo superior
+                <input type="range" min="0" max="50" value="0" class="inputRange"
+                oninput="modTopEsq(this.value)"><br />
+
+                Esquerda inferior
+                <input type="range" min="0" max="50" value="0" 
+                oninput="modBotEsq(this.value)">
+            </div>
+
+            <!--div que conter os manipuladores direito-->
+            <div  class='container'>
+
+                Direito Superior
+                <input type="range" min="0" max="50" value="0"
+                oninput="modTopDir(this.value)"><br />
+
+                Direita inferior
+                <input type="range" min="0" max="50" value="0"
+                oninput="modBotDir(this.value)">
+                
+            </div>
+                
+            <!--Quadrado manipulado-->
+            <div name="quadrado_style_manipulado" id='squad'></div>
+
+        </div>
+            <!--Área que recebe os valores manipulados-->
+            <div>
+                <textarea id="boxCopiar"></textarea>
+            </div>
+
+            <button id="btn-copiar" onclick="myFunction()" > Copiar </button>
+    </div>
+<script src="mani_estilo.js"></script>
+</body>
+</html>
